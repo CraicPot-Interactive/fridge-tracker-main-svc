@@ -6,7 +6,9 @@ import com.craicpotinteractive.fridgetrackermainsvc.repository.LoginRepository;
 import com.craicpotinteractive.fridgetrackermainsvc.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LoginServiceImpl implements LoginService{
     private final UserRepository USERS;
     private final LoginRepository LOGINS;
