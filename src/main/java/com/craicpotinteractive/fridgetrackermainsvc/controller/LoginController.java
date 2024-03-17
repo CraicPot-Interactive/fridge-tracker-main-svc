@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.net.http.HttpResponse;
 
 @RestController
 public class LoginController {
@@ -20,5 +19,10 @@ public class LoginController {
     @PostMapping
     public User Login(Login user){
         return LOGINSERVICE.Login(user);
+    }
+
+    @GetMapping
+    public String Index(){
+        return "Hello World";
     }
 }
