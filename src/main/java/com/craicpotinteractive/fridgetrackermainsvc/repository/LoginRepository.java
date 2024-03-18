@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface LoginRepository extends JpaRepository<Login, Long> {
-    @Query("SELECT * FROM Login l WHERE Login.username = l.username")
-    public Login findLoginByUsername(String username);
+    //@Query("SELECT * FROM Login l WHERE Login.username = l.username")
+    public Login findLoginByUserName(String userName);
 }

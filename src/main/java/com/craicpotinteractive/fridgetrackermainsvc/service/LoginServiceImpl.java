@@ -24,7 +24,7 @@ public class LoginServiceImpl implements LoginService{
     public User Login(Login userLogin) {
         Login empty = new Login();
         try {
-            empty = LOGINS.findLoginByUsername(userLogin.getUserName());
+            empty = LOGINS.findLoginByUserName(userLogin.getUserName());
         }catch(Exception ex){
             LOGGER.error("Exception encountered at login {}", ex.getMessage());
         }
