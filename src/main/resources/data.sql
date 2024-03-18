@@ -1,0 +1,2 @@
+INSERT INTO login (loginId, userName, password) VALUES (1, 'jneill5', 'password');
+INSERT INTO users (userId, firstName, surname, emailAddress, dateOfBirth, loginId) VALUES (1, 'Jamie', 'Neill', 'jsneill98@gmail.com', '1998-11-01', 1);
