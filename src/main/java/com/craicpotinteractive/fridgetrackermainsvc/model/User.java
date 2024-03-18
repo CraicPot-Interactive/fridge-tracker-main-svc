@@ -33,4 +33,16 @@ public class User {
 
     @Column(name="loginId")
     private long loginId;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "Id=" + Id +
+                ", firstName='" + firstName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", email='" + email + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", loginId=" + loginId +
+                '}';
+    }
 }
